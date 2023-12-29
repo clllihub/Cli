@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 确保引入了 color-thief 的 script -->
+<script src="node_modules/colorthief/dist/color-thief.min.js"></script>
+
+
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLi</title>
+    <link rel="icon" type="image/png" href="https://ossoososssn.oss-cn-beijing.aliyuncs.com/files/icon/about-logo.png">
+
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- 汉堡菜单图标 -->
+            <div id="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Logo -->
+            <a href="#" class="nav-logo">CLi</a>
+
+            <!-- 导航链接 -->
+            <div class="nav-links" id="nav-links">
+                <a href="http://cllli.com/" class="nav-item">首页</a>
+                <a href="https://gallery.cllli.com/" class="nav-item">画廊</a>
+                <a href="http://blog.cllli.com/" class="nav-item">博客</a>
+                <a href="001@cllli.com" class="nav-item">联系</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- 左侧显示的图片 -->
+        <div class="image-container">
+            <img crossOrigin="anonymous" id="image"
+                src="https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/99.jpg" />
+
+        </div>
+        <!-- 右侧信息容器 -->
+        <div class="info-container">
+            <h1 id="image-title">清风小镇</h1>
+            <div class="custom-text custom-text-color" id="image-quote">
+                我希望成为那种，即使再孤单，生活再坎坷，不管天晴天阴，不管有无人爱，都会眷恋着日落晚霞和晨光捕捉生活美好瞬间的人。</div>
+            <div class="custom-text custom-text-small-gray" id="image-coordinates">坐标:121.244865,38.835625</div>
+            <div class="custom-text">001@cllli.com</div>
+            <div class="custom-text" id="image-camera">Canon EOS R6/大连</div>
+
+            <!-- Container for text and gradient rectangle -->
+            <div class="text-and-rectangle">
+                <!-- Gradient rectangle -->
+                <div class="color-rectangle"></div>
+
+                <!-- Color codes -->
+                <div class="custom-text-row">
+                    <div>#FDFBF0</div>
+                    <div>#DCB884</div>
+                    <div>#1A1816</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 背景音乐 -->
+    <audio autoplay loop id="background-music">
+        <source src="audio/bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+
+</html>
