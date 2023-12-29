@@ -1,0 +1,365 @@
+       /* 新增全局样式 */
+       body,
+       html {
+           height: 100%;
+           margin: 0;
+           padding: 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color: #ffffff;
+           /* 页面统一的背景颜色 */
+           font-family: Arial, sans-serif;
+       }
+
+       .container {
+           width: 100%;
+           /* 或者是您希望的宽度百分比 */
+           max-width: 1400px;
+           /* 或者根据您的设计调整 */
+           box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+           /* 可选的阴影效果 */
+           background-color: #fff;
+           /* 如果需要，设置容器背景颜色 */
+           border-radius: 10px;
+           /* 圆角边框，如果需要 */
+           overflow: hidden;
+           /* 防止子元素超出容器边界 */
+           /* 其他样式 */
+       }
+
+       /* 共享样式 */
+       .container {
+           display: flex;
+           align-items: center;
+       }
+
+       /* 左侧图片样式 */
+       .image-container {
+           flex: 1;
+           padding: 20px;
+           position: relative;
+           overflow: hidden;
+       }
+
+       img {
+           max-width: 100%;
+           height: auto;
+           display: block;
+           margin: 0 auto;
+           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+           transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+       }
+
+       img:hover {
+           transform: scale(1.1);
+       }
+
+       /* 右侧信息容器样式 */
+       .info-container {
+           flex: 1;
+           padding: 20px;
+           text-align: left;
+       }
+
+       h1 {
+           text-align: left;
+           /* 左对齐文本 */
+           font-size: 50px;
+           /* 增大字体字号 */
+           margin-bottom: 10px;
+           /* 增加下方间距 */
+       }
+
+       /* 自定义文字样式 */
+       .custom-text {
+           font-size: 20px;
+           /* 增大字体字号 */
+           font-weight: bold;
+       }
+
+       .custom-text-color {
+           color: #DCB884;
+           font-size: 15px;
+       }
+
+       .custom-text-small-gray {
+           font-size: 14px;
+           color: #aaa;
+       }
+
+       /* 渐变矩形样式 */
+       .text-and-rectangle {
+           margin-top: 20px;
+           text-align: left;
+       }
+
+       .color-rectangle {
+           width: 100%;
+           height: 80px;
+           background: linear-gradient(90deg, #FDFBF0, #DCB884, #1A1816);
+           border-radius: 5px;
+           margin-top: 10px;
+       }
+
+       /* 媒体查询：当屏幕宽度小于某个值时应用以下样式 */
+       @media screen and (max-width: 768px) {
+           .container {
+               flex-direction: column;
+           }
+
+           .info-container {
+               margin-top: 20px;
+               text-align: center;
+           }
+       }
+
+       /* 底部自定义文字样式 */
+       .custom-text-row {
+           display: flex;
+           justify-content: space-between;
+           /* 左、中、右对齐 */
+           font-size: 12px;
+           color: #777;
+           text-align: left;
+           /* 左对齐文本 */
+           margin-top: 10px;
+           /* 上方留白 */
+       }
+
+       /* 导航栏样式 */
+       .navbar {
+           width: 100%;
+           background-color: #333;
+           /* 导航栏背景颜色 */
+           overflow: hidden;
+       }
+
+       .nav-container {
+           max-width: 1200px;
+           margin: auto;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px 20px;
+       }
+
+       .nav-logo {
+           color: #fff;
+           /* LOGO 文字颜色 */
+           text-decoration: none;
+           font-size: 24px;
+           /* LOGO 字体大小 */
+           font-weight: bold;
+       }
+
+       .nav-links {
+           display: flex;
+       }
+
+       .nav-item {
+           color: #fff;
+           /* 导航项文字颜色 */
+           text-decoration: none;
+           padding: 0 15px;
+           /* 导航项内边距 */
+           font-size: 18px;
+           /* 导航项字体大小 */
+       }
+
+       .nav-item:hover {
+           background-color: #ddd;
+           /* 鼠标悬停时的背景颜色 */
+           color: #333;
+           /* 鼠标悬停时的文字颜色 */
+       }
+
+       /* 响应式导航栏样式 */
+       @media screen and (max-width: 768px) {
+           .nav-container {
+               flex-direction: column;
+           }
+
+           .nav-links {
+               flex-direction: column;
+               width: 100%;
+           }
+
+           .nav-item {
+               text-align: center;
+               padding: 10px 0;
+               /* 增加垂直内边距，水平内边距为0 */
+           }
+       }
+
+       .color-rectangle {
+           /* 使用了一个稍微复杂的渐变定义，颜色在中间相遇并平滑过渡 */
+           background: linear-gradient(to right,
+                   color1 0%,
+                   /* 颜色1从0%开始 */
+                   color1 33%,
+                   /* 颜色1过渡到33% */
+                   color2 33%,
+                   /* 颜色2从33%开始 */
+                   color2 66%,
+                   /* 颜色2过渡到66% */
+                   color3 66%,
+                   /* 颜色3从66%开始 */
+                   color3 100%);
+           /* 颜色3过渡到100% */
+       }
+
+       /* 导航栏 */
+       .navbar {
+           width: 100%;
+           /* 导航栏宽度占满整个屏幕宽 */
+           background-color: #333;
+           /* 导航栏背景颜色，可以根据您的需要修改 */
+           position: fixed;
+           /* 固定定位，使导航栏固定在顶部 */
+           top: 0;
+           /* 距离页面顶部的距离为0 */
+           left: 0;
+           /* 距离页面左侧的距离为0 */
+           z-index: 1000;
+           /* 确保导航栏在最上层 */
+       }
+
+       .nav-container {
+           max-width: 1200px;
+           /* 最大宽度，可以根据您的需要修改 */
+           margin: 0 auto;
+           /* 水平居中显示 */
+           padding: 10px 20px;
+           /* 内边距，根据需要调整 */
+           display: flex;
+           /* 使用弹性盒子布局 */
+           justify-content: space-between;
+           /* 项目两端对齐 */
+           align-items: center;
+           /* 项目在交叉轴上居中对齐 */
+       }
+
+       .nav-logo {
+           color: #fff;
+           /* LOGO文字颜色 */
+           text-decoration: none;
+           /* 去除下划线 */
+           font-size: 24px;
+           /* 字体大小 */
+           font-weight: bold;
+           /* 字体加粗 */
+           display: block;
+           /* 默认显示Logo
+       }
+
+       .nav-links {
+           display: flex;
+           /* 使用弹性盒子布局 */
+       }
+
+       .nav-item {
+           color: #fff;
+           /* 导航项文字颜色 */
+           text-decoration: none;
+           /* 去除下划线 */
+           padding: 0 15px;
+           /* 左右内边距 */
+           font-size: 18px;
+           /* 字体大小 */
+       }
+
+       .nav-item:hover {
+           background-color: #ddd;
+           /* 鼠标悬停背景色 */
+           color: #333;
+           /* 鼠标悬停文字颜色 */
+       }
+
+       /* 当屏幕宽度小于 768px 时 */
+       @media screen and (max-width: 768px) {
+           .nav-container {
+               flex-direction: column;
+               align-items: center;
+           }
+
+           .nav-links {
+               flex-direction: column;
+               width: 100%;
+           }
+
+           .nav-item {
+               text-align: center;
+               padding: 5px 0;
+               width: 100%;
+               display: block;
+           }
+
+           /* 可能需要隐藏一些不适合小屏幕的元素 */
+           .some-element {
+               display: none;
+           }
+
+           /* 添加一个汉堡菜单图标的样式 */
+           .hamburger-menu {
+               display: block;
+           }
+       }
+
+       /* 汉堡菜单样式 */
+       #hamburger-menu {
+           display: none;
+           /* 默认不显示，只在小屏幕时显示 */
+           cursor: pointer;
+           flex-direction: column;
+           justify-content: space-around;
+           height: 25px;
+           display: none;
+           /* 默认不显示汉堡菜单 */
+       }
+
+       #hamburger-menu span {
+           display: block;
+           width: 30px;
+           height: 3px;
+           background-color: #fff;
+           /* 调整为您希望的颜色 */
+       }
+
+       /* 小屏幕适配 */
+       @media screen and (max-width: 768px) {
+           .nav-logo {
+               display: none;
+               /* 隐藏Logo */
+           }
+
+           #hamburger-menu {
+               display: block;
+               /* 显示汉堡菜单 */
+               position: absolute;
+               right: 10px;
+               /* 调整位置，确保在右侧 */
+               top: 10px;
+               z-index: 2;
+               /* 设置足够的z-index以保证它位于最上层 */
+           }
+
+           .nav-links {
+               display: none;
+               /* 默认隐藏链接 */
+               position: absolute;
+               top: 60px;
+               /* 汉堡菜单下方显示 */
+               right: 0;
+               left: 0;
+               background: #333;
+               /* 背景颜色 */
+               z-index: 1;
+               /* 保证导航链接位于汉堡菜单下层 */
+           }
+
+           .nav-links.active {
+               display: block;
+               /* 激活状态下显示链接 */
+           }
+       }
