@@ -332,7 +332,9 @@
                display: none;
                /* 隐藏Logo */
            }
-
+           .navbar {
+               display: none;
+           }
            #hamburger-menu {
                display: block;
                /* 显示汉堡菜单 */
