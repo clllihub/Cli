@@ -9,18 +9,18 @@ var images = [
         camera: "iPhone 14 pro拍摄于/大连"
     },
     {
-        url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/11.jpg",
-        title: "小平岛中心广场",
-        quote: "同在一个环境中生活，强者与弱者的分界就在于谁能改变它。",
-        coordinates: "坐标:121.509537,38.837753",
-        camera: "iPhone 14 pro拍摄于/大连"
+        url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/2024/IMG_0482.JPG",
+        title: "菱角湾",
+        quote: "总会有难熬的日子，但你会感谢今日努力拼命的自己，你想要的就是你的未来；世界上所有的惊喜和好运，都是你累积的人品和善良。",
+        coordinates: "坐标:121.688034,38.877636",
+        camera: "Canon EOS R6 拍摄于/大连"
     },
     {
-        url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/14.jpg",
-        title: "富国公园",
-        quote: "用行动祈祷比用言语更能够使上帝了解。",
-        coordinates: "坐标:121.582156,38.8986",
-        camera: "iPhone 14 pro拍摄于/大连"
+        url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/2024/IMG_0472.JPG",
+        title: "观光塔",
+        quote: "生活是自己的，你选择怎样的生活，就会成就怎样的你。与其抱怨这个世界不美好，不如用自己的努力，争取更多的美好和幸运。",
+        coordinates: "坐标:121.640599,38.911825",
+        camera: "Canon EOS R6 拍摄于/大连"
     },
     {
         url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/19.jpg",
@@ -183,6 +183,21 @@ var images = [
         coordinates: "坐标:121.431916,38.889787",
         camera: "iPhone 14 pro拍摄于/大连"
     },
+    {
+        url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/11.jpg",
+        title: "小平岛中心广场",
+        quote: "同在一个环境中生活，强者与弱者的分界就在于谁能改变它。",
+        coordinates: "坐标:121.509537,38.837753",
+        camera: "iPhone 14 pro拍摄于/大连"
+    },
+    {
+        url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/14.jpg",
+        title: "富国公园",
+        quote: "用行动祈祷比用言语更能够使上帝了解。",
+        coordinates: "坐标:121.582156,38.8986",
+        camera: "iPhone 14 pro拍摄于/大连"
+    },
+
 ];
 
 
