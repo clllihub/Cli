@@ -20,6 +20,7 @@ html {
     overflow: hidden;
     display: flex;
     align-items: center;
+
 }
 
 .image-container,
@@ -108,19 +109,30 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+
 }
 
 .nav-logo {
-    color: #353535;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+    width: 80px;
+    /* 设置图像的宽度 */
+    height: 35px;
+    /* 设置图像的高度 */
+    background-image: url('https://cllli.oss-cn-beijing.aliyuncs.com/logo/logo.gif');
+    /* 替换 'your-image-url.png' 为您的图像文件路径 */
+    background-repeat: no-repeat;
+    /* 防止图像重复 */
+    background-position: left center;
+
+
+
 }
+
 
 .nav-links {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .nav-item {
@@ -141,6 +153,7 @@ h1 {
     font-size: 17px;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 /* 响应式导航栏样式 */
 @media screen and (max-width: 768px) {
