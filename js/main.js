@@ -158,7 +158,7 @@ var images = [
     {
         url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/83.jpg",
         title: "海",
-        quote: "继续添加更多图片和鸡汤...",
+        quote: "蜕变的过程是很痛苦的，但每一次的蜕变，都会有成长的惊喜。做你没做过的事情叫成长，做你不愿意做的事情叫改变，做你不敢做的事情叫突破。",
         coordinates: "坐标:121.55228,38.860869",
         camera: "iPhone 14 pro拍摄于/大连"
     },
