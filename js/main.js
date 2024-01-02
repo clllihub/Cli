@@ -16,6 +16,13 @@ var images = [
         camera: "Canon EOS R6 拍摄于/大连"
     },
     {
+        url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/2024/6b0b9e784781268d3b9a16b3b3cd599.jpg",
+        title: "菱角湾",
+        quote: "喜欢一个人就勇敢表白吧，也许你还能知道自己是几号备胎。",
+        coordinates: "坐标:121.640599,38.911825",
+        camera: "Canon EOS R6 拍摄于/大连"
+    },
+    {
         url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/2024/IMG_0472.JPG",
         title: "观光塔",
         quote: "生活是自己的，你选择怎样的生活，就会成就怎样的你。与其抱怨这个世界不美好，不如用自己的努力，争取更多的美好和幸运。",
