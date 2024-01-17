@@ -2,13 +2,6 @@
 // 图片列表数组
 var images = [
     {
-        url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/life/photo/1/102.jpg",
-        title: "大连中心御景",
-        quote: "没有人富有得能够不好别人的帮忙，也没有人穷得不能在某方面给他人帮忙。",
-        coordinates: "坐标:121.635623,38.923408",
-        camera: "iPhone 14 pro拍摄于/大连"
-    },
-    {
         url: "https://ossoososssn.oss-cn-beijing.aliyuncs.com/images/2024/IMG_0482.JPG",
         title: "菱角湾",
         quote: "总会有难熬的日子，但你会感谢今日努力拼命的自己，你想要的就是你的未来；世界上所有的惊喜和好运，都是你累积的人品和善良。",
