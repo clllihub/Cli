@@ -7,21 +7,23 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     font-family: Arial, sans-serif;
 }
 
 .container {
     width: 100%;
     max-width: 1400px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    background-color: #fff;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     align-items: center;
-
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* 添加更加立体的阴影效果 */
 }
+
+
 
 .image-container,
 .info-container {
@@ -38,6 +40,8 @@ img {
     margin: 0 auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(1.1);
+    /* 初始放大为1.1倍 */
 }
 
 img:hover {
@@ -162,5 +166,63 @@ h1 {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* 在移动设备上使图片不要过于放大 */
+@media only screen and (max-width: 600px) {
+    img {
+        transform: scale(1);
+        /* 初始放大为1倍 */
+    }
+}
 
+/* 简化导航栏 */
+.nav-container {
+    padding: 10px 0;
+    /* 为了适应移动设备，减少水平内边距 */
+}
 
+.nav-logo {
+    width: 60px;
+    /* 调整logo尺寸 */
+    height: 25px;
+}
+
+.nav-item {
+    padding: 0 10px;
+    /* 调整导航链接的内边距 */
+    font-size: 16px;
+    /* 减小字体大小 */
+}
+
+/* 调整其他元素以适应移动设备 */
+.container {
+    border-radius: 0;
+    /* 移动设备上去除容器的圆角 */
+    box-shadow: none;
+    /* 移动设备上去除容器的阴影 */
+}
+
+.image-container,
+.info-container {
+    padding: 10px;
+    /* 减少内容容器的内边距 */
+}
+
+h1 {
+    font-size: 40px;
+    /* 减小标题字体大小 */
+}
+
+.custom-text {
+    font-size: 16px;
+    /* 减小自定义文本字体大小 */
+}
+
+.custom-text-row {
+    font-size: 10px;
+    /* 减小自定义文本行字体大小 */
+}
+
+.color-rectangle {
+    height: 60px;
+    /* 减小颜色矩形的高度 */
+}
