@@ -14,15 +14,17 @@ html {
 .container {
     width: 100%;
     max-width: 1400px;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    /* 设置背景色并降低透明度以使毛玻璃效果更明显 */
     overflow: hidden;
     display: flex;
     align-items: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* 添加更加立体的阴影效果 */
+    backdrop-filter: blur(10px);
+    /* 添加模糊效果，可以调整模糊程度 */
+    border-radius: 8px !important;
+    /* 添加圆角并使用 !important */
 }
-
 
 
 .image-container,
